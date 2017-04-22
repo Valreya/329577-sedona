@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Валентина Зыкова](https://up.htmlacademy.ru/htmlcss/17/user/329577).
-* Наставник: [Ирина Малиновская](up.htmlacademy.ru/htmlcss/17/user/29644).
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
