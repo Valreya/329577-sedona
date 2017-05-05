@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>Sedona</title>
   </head>
@@ -34,7 +34,7 @@
       </header>
       <main class="container">
         <div class="entry">
-          <figure><img src="img/intro.jpg"" width="1200" height="564" alt="Седона"></figure>
+          <figure><img src="img/index-entry-text.png" width="448" height="352" alt="Седона"></figure>
         </div>
         <div class="preview">
          <h2>Седона - небольшой городок в Аризоне, заслуживающий большнго!</h2>
@@ -64,17 +64,17 @@
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </section>
-        <section class="advantages">
-          <div class="advantages-img">
+        <section class="attractions">
+          <div class="attractions-img">
             <img src="img/devil-bridge.jpg" width="800" height="255" alt="Седона">
           </div>
-          <div class="advantages-text">
+          <div class="attractions-text">
             <h2>Там есть мост дьявола</h2>
             <p>- № 2 -</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
-        <section class="plus">
+        <section class="plus clearfix">
           <div class="plus-text">
             <h2>Небольшая площадь</h2>
             <p>- № 3 -</p>
@@ -96,11 +96,12 @@
             <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="search">
+          <button class="btn" type="submit">Поиск гостиницы в Седоне</button>
           <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
-            <label>Дата заезда <input type="text" name="date" value=""></label>
-            <label>Дата выезда <input type="text" name="time" value=""></label>
-            <label>Взрослые <input type="text" name="name" value=""></label>
-            <label>Дети <input type="tel" name="phone" value=""></label>
+            <label>Дата заезда <input type="date" name="arrival" value=""></label>
+            <label>Дата выезда <input type="date" name="departure" value=""></label>
+            <label>Взрослые <input type="number" name="grownups" value=""></label>
+            <label>Дети <input type="number" name="children" value=""></label>
             <button class="btn" type="submit">Найти</button>
           </form>
         </div>
