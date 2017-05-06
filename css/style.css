@@ -118,6 +118,7 @@ h3 {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+  clear: both;
 }
 
 .tag {
@@ -133,6 +134,11 @@ h3 {
 .footer-copyright {
   float: right;
   width: 180px;
+}
+
+.selection-criteria {
+  clear: both;
+}
 
 .infrastructure {
   float: left;
@@ -149,6 +155,22 @@ h3 {
   width: 327px;
 }
 
+.searching-result {
+  float: left;
+  width: 116px;
+  clear: both;
+}
+
+.sorting {
+  float: left;
+  width: 356px;
+}
+
+.housing {
+  clear: both;
+  min-height: 150px;
+}
+
 .housing-img {
   float: left;
   width: 135px;
@@ -162,4 +184,30 @@ h3 {
 .housing-rating {
   float: right;
   width: 168px;
+}
+
+fieldset {
+  border: none;
+}
+
+.hotel-name {
+  text-align: left;
+}
+
+.housing-info {
+  clear: both;
+}
+
+.housing-type {
+  float: left;
+  width: 80px;
+}
+
+.housing-price {
+  float: left;
+  width: 70px; 
+}
+
+.button {
+  clear: both;
 }
