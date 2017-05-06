@@ -52,6 +52,10 @@ h3 {
   width: 800px;
 }
 
+.features {
+  clear: both;
+}
+
 .features-item {
   float: left;
   width: 380px;
@@ -63,11 +67,7 @@ h3 {
 
 .attractions {
   min-height: 255px;
-}
-
-.attractions-text {
-  float: right;
-  width: 400px;
+  clear: both;
 }
 
 .attractions-img {
@@ -75,9 +75,17 @@ h3 {
   width: 800px;
 }
 
+.attractions-text {
+  float: right;
+  width: 400px;
+}
+
+.plus {
+  clear: both;
+}
+
 .plus-text {
   float: left;
-  width: 380px;
 }
 
 .plus-text:last-child {
@@ -91,7 +99,7 @@ h3 {
 }
 
 .search {
-  width: 565;
+  width: 570;
   margin-right: auto;
   margin-left: auto;
 }
