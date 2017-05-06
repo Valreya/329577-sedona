@@ -9,6 +9,7 @@ body {
 h2 {
 	font-size: 21px;
 	font-weight: bold;
+  text-align: center;
 }
 
 h3 {
@@ -40,11 +41,14 @@ h3 {
 
 .advantages {
   min-height: 255px;
+  clear: both;
  }
 
 .advantages-text {
   float: left;
   width: 400px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .advantages-img {
@@ -59,6 +63,7 @@ h3 {
 .features-item {
   float: left;
   width: 380px;
+  text-align: center;
 }
 
 .features-item:last-child {
@@ -78,6 +83,8 @@ h3 {
 .attractions-text {
   float: right;
   width: 400px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .plus {
@@ -86,6 +93,8 @@ h3 {
 
 .plus-text {
   float: left;
+  width: 380px;
+  text-align: center;
 }
 
 .plus-text:last-child {
@@ -96,6 +105,7 @@ h3 {
   width: 440px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 .search {
