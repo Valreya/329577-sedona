@@ -17,16 +17,18 @@ h3 {
 	font-weight: bold;
 }
 
-.container {
-  width: 1200px;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
-.main-header {
-   margin: 0 auto;
- }
-
-.entry {
+.entry-img {
   width: 458px;
   min-height: 352px;
   margin-right: auto;
@@ -34,9 +36,8 @@ h3 {
 }
 
 .preview {
-  width: 440px;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
+  vertical-align: middle;;
 }
 
 .advantages {
@@ -108,7 +109,7 @@ h3 {
   text-align: center;
 }
 
-.search {
+.btn-search {
   width: 570;
   margin-right: auto;
   margin-left: auto;
@@ -123,12 +124,15 @@ h3 {
 
 .tag {
   float: left;
-  width: 180px;
+  width: 136px;
+  margin-left: 132px;
+  margin-right: 256px;
 }
 
 .footer-social {
   float: left;
-  width: 180px;
+  width: 150px;
+  margin-right: 228px;
 }
 
 .footer-copyright {
@@ -142,28 +146,30 @@ h3 {
 
 .infrastructure {
   float: left;
-  width: 240px;
+  width: 212px;
+  padding-left: 72px;
 }
 
 .dwelling {
   float: left;
-  width: 240px;
+  width: 482px;
 }
 
 .price {
   float: right;
-  width: 327px;
+  width: 392px;
 }
 
 .searching-result {
   float: left;
-  width: 116px;
+  width: 236px;
   clear: both;
+  margin-left: 72px;
 }
 
 .sorting {
   float: left;
-  width: 356px;
+  width: 354px;
 }
 
 .housing {
@@ -174,6 +180,7 @@ h3 {
 .housing-img {
   float: left;
   width: 135px;
+  margin-left: 72px;
 }
 
 .info {
