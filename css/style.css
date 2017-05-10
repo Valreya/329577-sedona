@@ -68,6 +68,10 @@ p {
   color: #81b3d2;
 }
 
+.main-navigation a:active {
+  color: #cccccc;
+}
+
 .entry {
   background: #81b3d2 url("/img/index-entry-background.jpg") no-repeat;
 }
@@ -170,15 +174,69 @@ p {
   margin-bottom: 50px;
 }
 
-.btn-search {
+.search {
+  display: block;
   width: 568px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.btn-search {
+  width: 568px;
   background-color: #766357;
   padding-top: 34px;
   padding-bottom: 34px;
   color: #ffffff;
   font-weight: bold;
+  margin-bottom: 58px;
+}
+
+.searching-form input {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: none;
+}
+
+.searching-form input:hover {
+  background-color: #ebebeb;
+}
+
+.searching-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #ebebeb;
+}
+
+.searching-form label {
+  display: block;
+  margin-bottom: 28px;
+  padding-left: 54px;  
+}
+
+.btn-find {
+  width: 458px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #81b3d2;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 54px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-find:hover {
+  background-color: #669ec0;
+}
+
+.btn-find:active {
+  background-color: #5496bd;
+  color: #84b4d0;
 }
 
 .main-footer {
@@ -252,10 +310,15 @@ p {
   background: #ffffff url("/img/htmlacademy-pointing.png") no-repeat;
 }
 
+.footer-copyright .btn:active {
+  background: #ffffff url("/img/htmlacademy-push.png") no-repeat;
+}
+
 .selection-criteria {
   clear: both;
   background: #81b3d2 url("/img/selection-criteria-background.jpg") no-repeat;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .infrastructure {
@@ -308,6 +371,60 @@ p {
 .sorting li {
   display: inline-block;
   margin-right: 30px;
+  color: #cccccc;
+  text-decoration: none;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting li:hover {
+  color: #81b3d2;
+}
+
+.sorting li:active {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.up-down {
+  float: right;
+  width: 48px;
+  margin-right: 72px;
+}
+
+.triangle-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 11px solid #cccccc;
+  margin-right: 12px;
+}
+
+.triangle-up:hover {
+  border-bottom: 11px solid #000000;
+}
+
+.triangle-up:active {
+  border-bottom: 11px solid #81b3d2;
+}
+
+.triangle-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 11px solid #cccccc;
+}
+
+.triangle-down:hover {
+  border-bottom: 11px solid #000000;
+}
+
+.triangle-down:active {
+  border-bottom: 11px solid #81b3d2;
 }
 
 .housing {
@@ -342,6 +459,15 @@ p {
   margin-right: 6px;
 }
 
+.btn-detail:hover {
+  background-color: #669ec0;
+}
+
+.btn-detail:active {
+  background-color: #5496bd;
+  color: #84b4d0;
+}
+
 .btn-book {
   width: 142px;
   background-color: #766357;
@@ -350,6 +476,15 @@ p {
   padding-right: 17px;
   padding-left: 17px;
   margin-right: 6px;
+}
+
+.btn-book:hover {
+  background-color: #604e43;
+}
+
+.btn-book:active {
+  background-color: #503e33;
+  color: #857871;
 }
 
 .button a {
@@ -362,6 +497,7 @@ p {
   float: right;
   width: 168px;
   min-height: 90px;
+  margin-right: 72px;
 }
 
 .rating {
@@ -386,6 +522,10 @@ fieldset {
 
 .hotel-name:hover {
   color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: #cccccc;
 }
 
 .housing-info {
