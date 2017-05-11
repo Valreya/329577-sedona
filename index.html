@@ -16,16 +16,16 @@
           </div>
           <nav class="main-navigation">
             <ul>
-              <li>
+              <li class="left">
                 <a href="#">Информация</a>
              </li>
-              <li>
+              <li class="left">
                 <a href="#">Фото и видео</a>
               </li>
-              <li>
+              <li class="right">
                 <a href="#">Карта штата</a>
                </li>
-              <li>
+              <li class="right">
                 <a href="catalog.html">Гостиницы</a>
               </li>
             </ul>
@@ -34,7 +34,9 @@
       </header>
       <main class="container">
         <div class="entry clearfix">
-          <figure class="entry-img"><img src="img/index-entry-text.png" width="448" height="352" alt="Седона"></figure>
+          <div class="entry-mask">
+            <figure class="entry-img"><img src="img/index-entry-text.png" width="448" height="352" alt="Седона"></figure>
+          </div>
         </div>
         <div class="preview">
          <h2>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
@@ -96,14 +98,16 @@
             <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="search">
-          <button class="btn-search" type="submit">Поиск гостиницы в Седоне</button>
-          <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
-            <label>Дата заезда <input type="date" name="arrival" value=""></label>
-            <label>Дата выезда <input type="date" name="departure" value=""></label>
-            <label>Взрослые <input type="number" name="grownups" value=""></label>
-            <label>Дети <input type="number" name="children" value=""></label>
-            <button class="btn-find" type="submit">Найти</button>
-          </form>
+          <div class="search-form">
+            <button class="btn-search" type="submit">Поиск гостиницы в Седоне</button>
+            <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
+              <label>Дата заезда <input type="date" name="arrival" value=""></label>
+              <label>Дата выезда <input type="date" name="departure" value=""></label>
+              <label>Взрослые <input type="number" name="grownups" value=""></label>
+              <label>Дети <input type="number" name="children" value=""></label>
+              <button class="btn-find" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
       </main>
       <footer class="main-footer">
@@ -111,14 +115,14 @@
           <section class="tag">
             <a href="index.html">#VisitSedona</a>
           </section>
-          <section class="footer-social">
-            <a class="social-btn social-btn-tw" href="#"><img src="img/twitter.png" width="114" height="40" alt="Седона"></a>
-            <a class="social-btn social-btn-fb" href="#"><img src="img/facebook.png" width="114" height="40" alt="Седона"></a>
-            <a class="social-btn social-btn-yt" href="#"><img src="img/youtube.png" width="114" height="40" alt="Седона"></a>
+           <section class="footer-social">
+            <a class="social-btn social-btn-tw" href="#"></a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-yt" href="#"></a>
           </section>
-          <section class="footer-copyright">
+          <section class="footer-copyright clearfix">
             <p>website by</p>
-            <a class="btn" href="https://htmlacademy.ru"><img src="img/index-htmlacademy.png" width="114" height="40" alt="Седона"></a>
+            <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss"></a>
           </section>
         </div>
       </footer>

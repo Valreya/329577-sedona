@@ -7,8 +7,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="main-header clearfix">
-        <div class="container clearfix">
+      <header class="main-header">
+       <div class="container clearfix">
           <div class="logo">
             <a href="index.html">
               <img src="img/logo.png" width="138" height="70" alt="Седона"> 
@@ -16,16 +16,16 @@
           </div>
           <nav class="main-navigation">
             <ul>
-              <li>
+              <li class="left">
                 <a href="#">Информация</a>
-              </li>
-              <li>
+             </li>
+              <li class="left">
                 <a href="#">Фото и видео</a>
               </li>
-              <li>
+              <li class="right">
                 <a href="#">Карта штата</a>
                </li>
-              <li>
+              <li class="right">
                 <a href="catalog.html">Гостиницы</a>
               </li>
             </ul>
@@ -52,28 +52,39 @@
               </fieldset>
             </div>
             <div class="price">
-              <h3 class="price-title">Стоимость в сутки (Р):</h3>
-              <input type="text" name="from" value="" placeholder="от 0">
-              <input type="text" name="to" value="" placeholder="до 3000">
+              <div class="price-title">Стоимость в сутки (Р):</div>
+              <div class="price-controls">
+                <label class="from">от <input type="text" name="min-price" value="0"></label>
+                <label class="to">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
               <button class="btn" type="submit">Показать</button>
             </div>
           </form>
         </div>
-        <div class="searching-result clearfix">
-          <div class="found"> Найдено:</div>
-          <span class="found-what">3</span>
-        </div>
-        <div class="sorting">
-          <b class="sort">Сортировка:</b>
-          <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
-          </ul>
-        </div>
-        <div class="up-down">
-          <span class="triangle-up"></span>
-          <span class="triangle-down"></span>
+        <div class="results clearfix">
+          <div class="searching-result clearfix">
+            <div class="found"> Найдено:</div>
+            <span class="found-what">3</span>
+          </div>
+          <div class="sorting clearfix">
+            <div class="sort">Сортировка:</div>
+            <ul>
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По рейтингу</li>
+           </ul>
+          </div>
+          <div class="up-down clearfix">
+            <span class="triangle-up"></span>
+            <span class="triangle-down"></span>
+          </div>
         </div>
         <section class="housing-results">
           <div class="housing clearfix">
@@ -142,9 +153,9 @@
             <a class="social-btn social-btn-fb" href="#"></a>
             <a class="social-btn social-btn-yt" href="#"></a>
           </section>
-          <section class="footer-copyright">
+          <section class="footer-copyright clearfix">
             <p>website by</p>
-            <a class="btn" href="https://htmlacademy.ru"><img src="img/index-htmlacademy.png" width="114" height="40" alt="Седона"></a>
+            <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss"></a>
           </section>
         </div>
       </footer>
