@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>Sedona</title>
@@ -23,11 +24,11 @@
                 <a href="#">Фото и видео</a>
               </li>
               <li class="right">
-                <a href="#">Карта штата</a>
-               </li>
-              <li class="right">
                 <a href="catalog.html">Гостиницы</a>
               </li>
+              <li class="right">
+                <a href="#">Карта штата</a>
+               </li>
             </ul>
           </nav>
         </div>
@@ -53,15 +54,15 @@
          </div>
         </section>
         <section class="features clearfix">
-          <div class="features-item">
+          <div class="features-item house">
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
           </div>
-          <div class="features-item">
+          <div class="features-item food">
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
           </div>
-          <div class="features-item">
+          <div class="features-item souvenirs">
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного<br> производства!</p>
           </div>
@@ -76,18 +77,18 @@
             <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
           </div>
         </section>
-        <section class="plus clearfix">
-          <div class="plus-text">
+        <section class="pluses clearfix">
+          <div class="pluses-text">
             <h2>Небольшая площадь</h2>
             <p>- № 3 -</p>
             <p>Все достопримечательности<br> находятся очень близко</p>
           </div>
-          <div class="plus-text">
+          <div class="pluses-text">
             <h2>Красивая дорога</h2>
             <p>- № 4 -</p>
             <p>Ехать в седону из Лас-Вегаса совсем<br> не скучно</p>
           </div>
-          <div class="plus-text">
+          <div class="pluses-text">
             <h2>Мало туристов</h2>
             <p>- № 5 -</p>
             <p>Большинство едет в Гранд Каньон и<br> толпится там</p>
@@ -99,16 +100,17 @@
         </div>
         <div class="search">
           <div class="search-form">
-            <button class="btn-search" type="submit">Поиск гостиницы в Седоне</button>
-            <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
-              <label>Дата заезда <input type="date" name="arrival" value=""></label>
-              <label>Дата выезда <input type="date" name="departure" value=""></label>
-              <label>Взрослые <input type="number" name="grownups" value=""></label>
-              <label>Дети <input type="number" name="children" value=""></label>
-              <button class="btn-find" type="submit">Найти</button>
-            </form>
+            <a href="#">Поиск гостиницы в Седоне</a>
           </div>
+          <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="date">Дата заезда:<input type="date" name="arrival" value="24 апреля 2017"></label>
+            <label class="date">Дата выезда:<input type="date" name="departure" value="4 июля 2017"></label>
+            <label class="people">Взрослые:<button type="button" class="minus"></button><input type="text" name="grownups" value="2"><button type="button" class="plus"></button></label>
+            <label class="people">Дети:<button type="button" class="minus"></button><input type="text" name="children" value="0"><button type="button" class="plus"></button></label>
+            <button class="btn-find" type="submit">Найти</button>
+          </form>
         </div>
+        <div class="map"></div>
       </main>
       <footer class="main-footer">
         <div class="container clearfix">
