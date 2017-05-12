@@ -260,6 +260,7 @@ header ul {
   position: relative;
   z-index: 1;
   background: url("../img/map.jpg") no-repeat 50% 50%;
+  height: 473px;
 }
 
 .search {
