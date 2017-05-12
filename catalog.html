@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,70.." rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
@@ -33,23 +34,29 @@
           </nav>
         </div>
       </header>
-      <main class="container">
+      <main>
         <div class="selection-criteria clearfix">
           <form action="#" method="post">
             <div class='infrastructure'>
               <fieldset>
                 <legend>Инфраструктура</legend>
-                  <label><input type="checkbox" name="pool" checked>Бассейн</label>
-                  <label><input type="checkbox" name="parking">Парковка</label>
-                  <label><input type="checkbox" name="wifi">Wi-fi</label>
+                  <input type="checkbox" id="pool" checked>
+                  <label for="pool">Бассейн</label>
+                  <input type="checkbox" id="parking" disabled>
+                  <label for="parking">Парковка</label>
+                  <input type="checkbox" id="wifi" disabled>
+                  <label for="wifi">Wi-fi</label>
               </fieldset>
             </div>
             <div class='dwelling'>
               <fieldset>
                 <legend>Тип жилья</legend>
-                  <label><input type="checkbox" name="hotel" checked>Гостиница</label>
-                  <label><input type="checkbox" name="motel" checked>Мотель</label>
-                  <label><input type="checkbox" name="apart" checked>Апартаменты</label>
+                  <input type="checkbox" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                  <input type="checkbox" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                  <input type="checkbox" id="apart" checked>
+                  <label for="apart">Апартаменты</label>
               </fieldset>
             </div>
             <div class="price">

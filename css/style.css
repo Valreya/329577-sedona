@@ -1,10 +1,8 @@
 body {
 	font-size: 14px;
 	font-family: "PT Sans", "Arial", serif;
-	line-height: 26px;
 	color: black;
 	font-weight: normal;
-  text-transform: uppercase;
   position: relative;
   background-color: #f2f2f2;
 }
@@ -13,11 +11,14 @@ h2 {
 	font-size: 21px;
 	font-weight: bold;
   text-align: center;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 h3 {
 	font-size: 16px;
 	font-weight: bold;
+  text-transform: uppercase;
 }
 
 legend {
@@ -28,6 +29,8 @@ legend {
 p {
   font-size: 14px;
   font-weight: normal;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 .clearfix::after {
@@ -49,17 +52,12 @@ header ul {
 
 .wrapper {
   width: 1200px;
+  background-color: #ffffff;
   margin: 0 auto;
   box-shadow: 0 0 20px #000000;
 }
 
-.container {
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
-.logo img {
+.logo {
   width: 137px;
   height: 70px;
   position: absolute;
@@ -89,6 +87,7 @@ header ul {
   font-weight: bold;
   text-align: center;
   line-height: 56px;
+  text-transform: uppercase;
 }
 
 .main-navigation a:hover {
@@ -104,20 +103,27 @@ header ul {
 }
 
 .entry {
+  width: 100%;
   height: 510px;
   background: #81b3d2 url("../img/index-entry-background.jpg") no-repeat;
 }
 
+.entry figure {
+  margin: 0;
+}
+
 .entry-mask {
+  width: 100%;
   background: url("../img/index-entry-mask.png") no-repeat center bottom;
 }
 
 .entry-img {
   width: 448px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 74px;
+  padding-right: 31%;
+  padding-left: 31%;
+  padding-top: 78px;
   padding-bottom: 78px;
+  text-align: center;
 }
 
 .preview {
@@ -131,12 +137,13 @@ header ul {
   min-height: 255px;
   clear: both;
   margin-bottom: 56px;
+  background-color: #81b3d2; 
 }
 
 .advantages-text {
   float: left;
   width: 400px;
-  height: 209px;
+  min-height: 209px;
   text-align: center;
   background-color: #81b3d2;
   color: #ffffff;
@@ -146,6 +153,7 @@ header ul {
 .advantages-img {
   float: right;
   width: 800px;
+  height: 255px;
 }
 
 .features-item {
@@ -211,19 +219,21 @@ header ul {
   min-height: 255px;
   clear: both;
   margin: 0;
+  background-color: #81b3d2;
 }
 
 .attractions-img {
   float: left;
   width: 800px;
+  height: 255px;
 }
 
 .attractions-text {
   float: right;
   width: 400px;
-  height: 209px;
+  min-height: 255px;
+  min-height: 209px;
   text-align: center;
-  vertical-align: middle;
   background-color: #81b3d2;
   color: #ffffff;
   padding-top: 46px;
@@ -249,21 +259,27 @@ header ul {
 }
 
 .offer {
-  width: 440px;
+  width: 568px;
   margin-right: auto;
-  margin-left: auto;
+  left: 30%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1;
+}
+
+.offer-text {
   text-align: center;
   margin-bottom: 50px;
 }
 
 .map {
-  position: relative;
-  z-index: 1;
   background: url("../img/map.jpg") no-repeat 50% 50%;
+  width: 100%;
   height: 473px;
+  margin-top: 310px;
 }
 
-.search {
+.search form {
   position: relative;
   z-index: 2;
 }
@@ -271,12 +287,9 @@ header ul {
 .searching-form {
   display: block;
   width: 568px;
-  margin-right: auto;
-  margin-left: auto;
   background: #ffffff;
   margin-bottom: 58px;
   padding-top: 58px;
-  padding-bottom: 54px;
 }
 
 .search-form {
@@ -325,6 +338,13 @@ header ul {
   display: block;
   margin-bottom: 28px;
   padding-left: 54px;  
+}
+
+input[type="button"] {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url(images/calendar.png) no-repeat 50% 50%;
 }
 
 .plus {
@@ -383,7 +403,6 @@ header ul {
 .btn-find {
   width: 458px;
   margin-right: auto;
-  margin-left: auto;
   background-color: #81b3d2;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -405,16 +424,19 @@ header ul {
 }
 
 .main-footer {
-  padding-top: 60px;
-  padding-bottom: 40px;
   clear: both;
 }
 
 .tag {
   float: left;
-  width: 136px;
+  width: 33%px;
   margin-left: 132px;
   margin-right: 256px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 .tag a {
@@ -426,7 +448,7 @@ header ul {
 
 .footer-social {
   float: left;
-  width: 160px;
+  width: 33%px;
   margin-right: 200px;
   padding-top: 36px;
 }
@@ -494,14 +516,13 @@ header ul {
 
 .footer-copyright {
   float: right;
-  width: 200px;
+  width: 33%px;
   margin-right: 100px;
 }
 
 .footer-copyright p {
   float: left;
   width: 76px;
-  vertical-align: middle;
   margin-right: 8px;
 }
 
@@ -529,37 +550,73 @@ header ul {
 
 .infrastructure {
   float: left;
-  width: 140px;
+  width: 145px;
   margin-left: 114px;
-  margin-right: 114px;
+  margin-right: 95px;
   padding-top: 32px;
   padding-bottom: 38px;
+  display: block;
 }
 
-.infrastructure label {
-  display: block;
-  width: 130px;
-  margin-bottom: 22px;
-  background: url(../img/checkbox-border.png) no-repeat;
+legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
 .dwelling {
   float: left;
   width: 138px;
-  margin-right: 230px;
   padding-top: 32px;
   padding-bottom: 38px;
+  display: block;
 }
 
-.dwelling label {
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 22px;
+  font-size: 14px;
+  padding-left: 40px;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+ 
+input[type="checkbox"] + label:before {
+  content: "";
   display: block;
-  width: 130px;
-  margin-bottom: 22px;
+  width: 26px;
+  height: 26px;
+  background: url(../img/checkbox-border.png) no-repeat;
+  margin-right: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: url(../img/checkbox-active.png) no-repeat;
+}
+
+input[type="checkbox"]:hover + label:before {
   background: url(../img/checkbox-border.png) no-repeat;
 }
 
-.infrastructure label:checked {
+input[type="checkbox"]:checked:hover + label:before {
   background: url(../img/checkbox-active.png) no-repeat;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  background: url(../img/checkbox-border.png) no-repeat;
 }
 
 .price {
@@ -691,16 +748,22 @@ header ul {
 
 .found {
   display: inline-block;
+  font-size: 21px;
+  text-transform: uppercase;
+  line-height: 26px;
 }
 
 .sorting {
   display: inline-block;
   width: 450px;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: normal;
 }
 
 .sort {
   display: inline-block;
-  width: 76px;
 }
 
 .sorting ul {
@@ -710,8 +773,6 @@ header ul {
 
 .sorting li {
   display: inline-block;
-  font-size: 14px;
-  font-weight: normal;
   margin-right: 30px;
   color: #cccccc;
   text-decoration: none;
@@ -775,26 +836,40 @@ header ul {
 
 .housing {
   clear: both;
-  height: 90px;
+  border-top: 2px solid #cccccc;
+}
+
+.housing:last-child {
+  border-bottom: 2px solid #cccccc;
 }
 
 .housing-img {
   float: left;
   width: 135px;
   margin-left: 72px;
+  padding-top: 30px;
 }
 
 .info {
   float: left;
   width: 715px;
+  padding-top: 30px;
 }
 
 .hotel-name {
-  margin-bottom: 18px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
-.hotel-name {
-  margin-bottom: 18px;
+.housing-info {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .housing-type {
@@ -805,6 +880,10 @@ header ul {
 
 .btn-detail {
   width: 110px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #81b3d2;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -821,9 +900,16 @@ header ul {
   background-color: #5496bd;
   color: #84b4d0;
 }
+.button {
+  margin-top: 18px;
+}
 
 .btn-book {
   width: 142px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #766357;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -852,12 +938,14 @@ header ul {
   width: 168px;
   min-height: 90px;
   margin-right: 72px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .stars {
-  background: #ffffff url(../img/star.png);
-  background-position: right top;
-  background-repeat: repeat-1;
+  background-image: #ffffff url(../img/star.png);
 }
 
 .rating {
